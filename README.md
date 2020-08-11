@@ -1,5 +1,27 @@
 # AlvVector
-Vector class made by me, features a lot of the same features as the stranded vector class. Small Header only library.
+Vector class made by me, features a lot of the same features as the standard vector class. Small Header only library.
+
+# Code Example
+```
+#include <iostream>
+#include "AlvVector.h"
+
+int main() {
+	AlvVector<int> alvVec(1, 2, 3, 6, 11);
+	alvVec.PopBack();
+	alvVec.EmplaceBack(23, 42, 12);
+	alvVec.Insert(12, 2);
+
+	for (unsigned int i = 0; i < alvVec.size(); i++) {
+		std::cout << alvVec[i] << " ";
+	}
+
+	std::cin.get();
+	return 0;
+}
+```
+
+Will return: ```1 2 12 3 6 23 42 12```
 
 # .At(size_t index)
 Returns element in vector at specfied index
