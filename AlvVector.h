@@ -43,8 +43,6 @@ public:
 			m_Size = newSize;
 		}
 		else if (newSize > m_Size) { //If new size is bigger than current size, fill it with the data provided
-			std::cout << "Here" << std::endl;
-
 			for (unsigned int i = m_Size; i < newSize; i++) {
 				m_Data[i] = fillData;
 			}
